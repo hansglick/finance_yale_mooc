@@ -30,8 +30,8 @@ Si je comprends bien le S&P 500 est une mesure de la santé du marché (global).
 ### Le risque d'une action
 
 Le risque d'une action = **risque du marché** + **risque idiosyncratic**
- * risque du marché = Beta² * Variance(market return)
- * risque idiosyncratic = Variance(résidus)
+ * risque du marché = Beta² * Variance(market return). Je suis pas sûr de la formule. Market risk is the risk for an asset to experience losses due to factors that affect the entire stock market
+ * risque idiosyncratic = Variance(résidus). Idiosyncratic risk is the risk which is endemic to a specific asset and therefore not the market as a whole
 
 
 ### Régression linéaire dans la finance
@@ -69,6 +69,39 @@ En finance, les objets qu'on manipule ont tendance à suivre des lois de Cauchy 
 #### **Beta et covariance**
 
 Le Beta vu plus haut, est la covariance entre le titre et le marché normalisée entre 0 et 1. Le Beta d'une entreprise vaut en moyenne 1 car la variance du titre sera en moyenne égale à celle du marché, la covariance d'une variable avec elle même étant égale à la variance, le Beta moyen vaut 1
+
+
+
+# Leçon 3
+
+### Assurance
+
+Si chaque n personnes souscrivent à une assurance bris de glace. Si la probabilité qu'ils cassent leur pare brise dans l'année est égal à p et que ces événements sont indépendants (i.e. pas de guerre, pas de tempêtes) alors le nombre de pare brise cassés à la fin de l'année est une variable aléatoire X qui suit une loi binomiale de paramètres (n,p). Autrement dit, le nombre de pare prises cassés à la fin de l'année sera en moyenne de np et la standard deviation (aka la variance, aka le risque) sera de : 
+
+<img src="img/ratestd.PNG" width="158">
+
+Autrement dit, plus le nombre de personnes ayant souscrit à cette assurance est élevé, plus on peut estimer avec certitude le nombre de pare brises cassés. Quand n tend vers l'infini, la standard deviation tend vers zéro.
+
+### Pitfalls de l'assureur - selection bias
+
+L'assureur doit être capable de correctement estimer le *p*. L'erreur la plus commune est le selection bias. Disons que l'assureur sait que 1% des voitures voient leur pare brises cassés en France au cours d'un an. Il est alors tenté d'affirmer que p vaut 0.01. Seulement, il s'avère que ce sont les personnes habitant les quartiers les plus criminogènes qui souscrivent à une assurance bris de glace. Or, dans ces quartiers le nombre de pare brises cassés au cours d'un an n'est pas de 1% mais de 10%. 
+
+### Quand l'assureur est assuré
+
+ * Afin que les assureurs aient toujours de quoi couvrir les assurés, ils sont soumis à une espèce de régulation. C'est relativement récent dans l'histoire, dans le connecticut jusqu'en 1972, si votre assureur faisait faillite vous étiez foutus. Aujourd'hui les états et les gouvernements prennent le plus souvent les choses en charge. Le fameux *too big to fail* signifie que l'état ne peut pas se permettre de laisser telle entreprise faire faillite à cause des nombreuses interconnections qu'elle a dans l'économie du pays. Ce qui amène au problème suivant : comment s'assurer que les entreprises, sachant qu'elles sont backées par l'état, fassent les efforts de trésorerie et de liquidité suffisants. Certaines en abusent.
+ * Les assureurs sont également assurés en cas de catastrophes imprévisibles
+
+
+### Obamacare et le problèmes des assurances santé
+
+Les assurances santé souffrent du problème suivant aux USA : seuls les gens qui se savent malades envisagent de souscrire. Or sachant qu'ils sont malades, les assureurs pratiquent des tarifs exorbitants. Les tarifs étant exorbitants, les gens en bonne santé refusent d'y souscrire. L'Obama care a tenté de résoudre le problème de la manière suivante : en forçant les gens malades ou pas à souscrire à une assurance santé. La sanction étant une forte amende. Ainsi, les tarifs peuvent baisser et l'ensemble de la population peut être assurée.
+
+
+### Catastrophes naturelles et terrorisme
+
+Le gouvernement américain pousse les habitants à prendre des assurancs dans les zones à risque en insistant sur le fait qu'ils ne les aideront pas plus que ça (à part des prêts plus avantageux). Concernant le terrorisme, peu d'assureurs sont prêts à protéger contre le terrorisme tant de nombreux événements peuvent être corréles les uns aux autres. Si un 11 septembre arrive une seconde fois, des milliards de dollars de réparations pour des milliers de personnes seraient nécessaires alors qu'il ne s'agit que d'un seul attentat. Dans ce cas, le gouvernement accepte de jouer le rôle de l'assureur et protège la population contre ce risque en mettant la main à la poche.
+
+# Leçon 4
 
 
 
