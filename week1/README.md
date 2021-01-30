@@ -62,7 +62,7 @@ En finance, les objets qu'on manipule ont tendance à suivre des lois de Cauchy 
 #### **Rappel mathématique**
 
 
-<img src="img/covariancemath.JPG" width="485">
+<img src="img/covarianceformula.JPG" width="485">
 <img src="img/covarianceillus.GIF" width="485">
 
 
