@@ -42,7 +42,37 @@ Le risque d'une action = **risque du marché** + **risque idiosyncratic**
  * x : Market Return
  * b : Alpha 
 
-### Questions et vocabulaire
+
+### Distribution de Cauchy
+
+En finance, les objets qu'on manipule ont tendance à suivre des lois de Cauchy plutot que des lois normales. Quelques rappels :
+
+ * Theoreme central limite : la moyenne de x variables aléatoires et indépendantes suit une loi normale. Ceci n'est pas vrai si les lois de distributions possèdent des fat tails.
+ * Loi de cauchy : pareil que la loi normale mais possède des fat tails. Les événements extraordinaires sont en quelque sorte beaucoup plus probables
+
+<img src="img/cauchyvsnormal.PNG" width="339">
+
+
+### Risque et covariance
+
+#### **Idée sous jacente**
+
+**C'est LE point le plus important du cours jusqu'ici**. Admettons qu'on souhaite miser sur deux actions. Si la covariance des deux titres est nulle alors ça signifie que les probabilités de *réussite* des deux titres sont indépendantes l'une de l'autre. Si la covariance est positive, cela signifie que leur probabiliité de réussite sont corrélés positivement, autrement dit si l'une réussit, l'autre également mais si l'une se crash alors l'autre aussi. Lors de la construction d'un portfolio, on veut s'assurer que la covariance n'est PAS positive car c'est trop risqué. **LE RISQUE EST DETERMINE PAR LA COVARIANCE**. Dans le cas où ma covariance est négative, cela peut également nous intéressé car cela signifie que l'un des deux titres explosera quand l'autre se crashera, ce qui peut être à notre avantage s'il explose pour de bons. Les grands investisseurs sont donc ceux qui arrivent à estimer cette covariance de manière correcte ce qui fait appel à une forme d'intuition ou d'intelligence
+
+#### **Rappel mathématique**
+
+
+<img src="img/covariancemath.GIF" width="485">
+<img src="img/covarianceillus.JPG" width="485">
+
+
+#### **Beta et covariance**
+
+Le Beta vu plus haut, est la covariance entre le titre et le marché normalisée entre 0 et 1. Le Beta d'une entreprise vaut en moyenne 1 car la variance du titre sera en moyenne égale à celle du marché, la covariance d'une variable avec elle même étant égale à la variance, le Beta moyen vaut 1
+
+
+
+# Questions et vocabulaire
 
  * **Mortgage** : apparemment ce serait une sorte de prêt de la banque si tu leur accord le droit de saisir la propriété que tu tentes d'acheter avec le prêt
  * **Second mortgage** : ce serait un autre prêt auquel on aurait le droit sous certaines conditions
