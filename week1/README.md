@@ -24,6 +24,8 @@ Si je comprends bien le S&P 500 est une mesure de la santé du marché (global).
  1. Il existe une corrélation. Quand le marché monte, Apple monte.
  2. Cette corrélation est à l'avantage de Apple. Quand le marché monte, Apple monte encore plus (1.45>1)
  3. Le **beta** d'une action est la valeur de cette corrélation
+ 4. L'or est connu pour avoir un beta négatif. Quand l'économie se porte bien, tt le monde se fout d'en avoir mais en cas de crise, c'est une valeur qui s'arrache
+ 5. Apparemment un beta élevé signifie un risque élevé mais également un plus grand rendement
 
 <img src="img/overreact.PNG" width="612">
 
@@ -103,6 +105,53 @@ Le gouvernement américain pousse les habitants à prendre des assurancs dans le
 
 # Leçon 4
 
+### Diversification de portfolio, le principe
+
+Admettons qu'on soit un super ingénieur financier, et qu'on a raison 90% du temps sur la *réussite* d'une action ou pas. Au bout d'un nombre relativement faible d'essais, on se trompera nécessairement, ce qui signifie que si l'argent investi est grand alors le risque de ruine est non négligeable. Un bon ingénieur financier veut construire un portfolio qui pour un retour moyen donné a un risque minimum. C'est le CAPM, un modèle mathématique qui permet de construire le portfolio optimum
+
+
+
+### Cygne noir
+
+Théorie développé par le statisticien et trader Nassim Taleb selon laquelle les stratégies d'investissements ne prennent jamais en compte les événements rares alors que ces événements bien qu'êxtremement peu probable, ont un impact gigantesque
+
+
+
+### Equity premium puzzle
+
+Apparemment, on observe que le rendement des actions risqués serait supérieur à celui des obligations moins risqués. Ce qui serait surprenant selon les experts. **MOI PAS COMPRENDRE LE PROBLEM**.
+
+
+
+### CAPM
+
+Alors c'est un modèle qui affirme que sous certaines hypothèses (très) contraignantes, le rendement moyen d'une action est lié à son beta, au rendement moyen du marché et au risk free rate (taux sans risque) de cette manière :
+ * R(action) = RFR + Beta(R(Marché) - RFR)
+ * voir la [vidéo](https://www.youtube.com/watch?v=fDz_DgDJD5g&ab_channel=Edspira)
+ * Selon le modèle, on ne peut pas avoir de stratégie *short sales*, car si c'est une stratégie collective alors tt le monde short sell, et donc plus personne ne détient l'action, bon j'ai pas trop capté
+
+
+### Short sales
+
+La plupart des brokers permettent de détenir une somme négative d'actions. C'est ce qu'on appelle le short selling. Ce serait un élément important d'un portfolio correctement diversifié si je comprends bien. Le principe est le suivant : j'estime qu'une action A est surestimée. Son prix est de 100 €. Je prétends que je la détiens et je la vends à Jean-Louis. Je récupère donc 100 €. Seulement, Jean-Louis n'a toujours pas reçu l'action. Le broker me permet de donner l'action à Jean-Louis un peu plus tard. Or, l'action étant surestimée, le marché se réajuste et l'action ne vaut plus que 90€. J'achète donc l'action à ce moment là, la donne à Jean-Louis et je gagne donc 100 - 90 = 10 € dans l'opération.
+
+
+### Optimal portfolio
+
+Exemple d'un portfolio avec deux actions, une risquée et une autre sans aucun risque. En shortant le riskless asset, on peut obtenir un portfolio avec un rendement illimitée. Seulement, ce sera au prix d'une grosse variance et donc d'un risque de ruine proche de 1
+
+<img src="img/toyport.PNG" width="462">
+
+Exemple d'un portfolio avec deux actions risquée. Comme on peut le voir, lorsque la covariance entre les deux actions est positive, ca augmente la variance du portfolio et donc ca multiplie le risque de ruine. On cherche la covariance la plus petite possible, voire négative
+
+<img src="img/toyport2.PNG" width="559">
+
+
+### Optimal portfolio frontier
+
+Le graphique ci-dessous représente pour chaque rendement, la diversification de portfolio qui donne la variance minimum :
+
+<img src="img/frontier.PNG" width="584">
 
 
 # Questions et vocabulaire
@@ -110,6 +159,8 @@ Le gouvernement américain pousse les habitants à prendre des assurancs dans le
  * **Mortgage** : apparemment ce serait une sorte de prêt de la banque si tu leur accord le droit de saisir la propriété que tu tentes d'acheter avec le prêt
  * **Second mortgage** : ce serait un autre prêt auquel on aurait le droit sous certaines conditions
  * **Monthly Stock Return** : ce serait la croissance mensuel d'un investissement. Apparemment, ce serait une mesure qui souffrirait d'une grande variabilité. Très difficile d'estimer la santé financière de deux companies en comparant uniquement leurs courbes de monthly stock return
+ * **Equity premium puzzle** : pas tt compris
+ * **Short sales** : ceux qui achètent à des types qui short sell sont-ils au courant? Comment font-ils s'ils veulent revendre l'action avant qu'elles leur soit parvenu?
 
 # Anglais
 
