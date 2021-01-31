@@ -154,6 +154,15 @@ Le graphique ci-dessous représente pour chaque rendement, la diversification de
 <img src="img/frontier.PNG" width="584">
 
 
+### Gordon and Shapiro's Method
+
+Comment faire pour savoir si une action est suréstimée ou sousestimée. Gordon et Shapiro ont mis au point une méthode censée donner la valeur d'une action au temps présent en prenant en compte le futur
+ * P = Valeur à t0 / (rendement attendu - taux de croissance espérée de l'entreprise)
+ * Un bon investisseur ne choisit pas nécessairement les entreprises à grosse croissance, mais les actions dont le prix est sous estimé
+ * Un bon investisseur peut investir sur des entreprises à croissance négative tant que le prix de l'action est sous estimé
+ * [vid1](https://www.youtube.com/watch?v=TlH3_iOHX3s&t=32s&ab_channel=Edspira)
+ * [vid2](https://www.youtube.com/watch?v=7T8sgT-otDU&t=8s&ab_channel=FinanceKid)
+
 # Questions et vocabulaire
 
  * **Mortgage** : apparemment ce serait une sorte de prêt de la banque si tu leur accord le droit de saisir la propriété que tu tentes d'acheter avec le prêt
